@@ -1,4 +1,6 @@
-.PHONY: flake8 isort mypy pytest test
+.PHONY: test flake8 isort mypy pytest
+
+test: flake8 isort mypy pytest
 
 flake8:
 	flake8 almanac/
@@ -13,7 +15,6 @@ pytest:
 	py.test --spec --cov=almanac tests
 
 
-test: flake8 isort mypy pytest
 
 build: test
 	python setup.py bdist_wheel

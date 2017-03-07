@@ -38,19 +38,19 @@ def test_can_retrieve_register_service_by_contract():
     assert service == services.get(MockContract)
 
 
-def test_retrieving_unregistered_service_raises_an_exception():
+def test_retrieving_unregistered_service_raises_service_not_found_exception():
     services = Services()
     with pytest.raises(exceptions.ServiceNotFoundError):
         services.get(MockContract)
 
 
-def test_retrieving_with_non_type_raises_exception():
+def test_retrieving_with_non_type_raises_invalid_contract_exception():
     services = Services()
     with pytest.raises(exceptions.InvalidContract):
         services.get(object())
 
 
-def test_retrieving_with_non_contract_class_raises_exception():
+def test_retrieving_with_non_contract_class_raises_invalid_contract_exception():
     services = Services()
     with pytest.raises(exceptions.InvalidContract):
         services.get(MockService)
