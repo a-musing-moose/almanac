@@ -1,0 +1,26 @@
+# Basics
+*.py[cod]
+__pycache__
+*.egg-info
+
+# Logs
+*.log
+pip-log.txt
+
+# Unit test / coverage reports
+.cache
+.coverage
+htmlcov
+
+# Environments
+.env
+
+# Pyenv
+.python-version
+
+# Sublime text
+*.sublime-*
+
+# Build folders
+build/
+dist/
