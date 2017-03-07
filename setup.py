@@ -28,7 +28,7 @@ setup(
         'License :: OSI Approved :: BSD License',
         'Operating System :: Unix',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 3.6'
-        'Topic :: Other/Nonlisted Topic'
+        'Programming Language :: Python :: 3.6',
+        'Topic :: Other/Nonlisted Topic',
     ]
 )
