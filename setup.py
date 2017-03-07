@@ -9,7 +9,7 @@ if PROJECT_DIR:
     os.chdir(PROJECT_DIR)
 
 setup(
-    name='almanac',
+    name='his.almanac',
     version='0.0.1',
     url='',
     author="Jonathan Moss",

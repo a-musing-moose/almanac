@@ -1,7 +1,7 @@
 Alamanac
 ========
 
-A simple service registry for use within HIS.
+A simple service registry for use within HIS, but useful elsewhere.
 
 Services registered must extend an abstract base class, which acts as a contract or interface.
 
